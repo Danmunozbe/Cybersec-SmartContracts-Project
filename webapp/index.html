@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Contract Interaction</title>
+   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+  <script defer src="app.js"></script> <!-- Enlace al JS externo -->
+</head>
+<body>
+  <h1>Smart Contract Interaction</h1>
+
+  <input type="text" id="contractAddressInput" placeholder="Enter contract address">
+  <button onclick="connect()">🔌 Connect Wallet</button>
+  <p id="status">Not connected</p>
+
+  <hr>
+
+  <input type="text" id="nameInput" placeholder="Enter name">
+  <button onclick="setName()">Set Name</button>
+  <button onclick="getName()">Get Name</button>
+  <p><strong>Name:</strong> <span id="nameResult"></span></p>
+
+  <input type="number" id="ageInput" placeholder="Enter age">
+  <button onclick="setAge()">Set Age</button>
+  <button onclick="getAge()">Get Age</button>
+  <p><strong>Age:</strong> <span id="ageResult"></span></p>
+</body>
+</html>
